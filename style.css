@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.one{
+    background-color: brown;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    color:white;
+}
+
+.three{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-image:linear-gradient(360drg,rgba(0, 0, 255, 0.724),rgba(255, 0, 0, 0.608),rgba(0, 128, 0, 0.538)); */
+    animation-name: umer;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+
+}
+@keyframes umer{
+100%{
+    filter:hue-rotate(360deg);
+}
+
+}
+.four{
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    animation-name: umerr;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    background: #000;
+    border-radius: 40px;
+    border: 5px solid white;
+    /* background-image:linear-gradient(360deg,pink,brown,yellow); */
+
+}
+@keyframes umerr{
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <div class="four">
+        <div class="three">
+        
+    <h1>00:00:00</h1>
+</div>
+</div>
+
+</div>
+    
+    <script>
+        var x=setInterval(()=>{
+            var time=document.querySelector('h1')
+            var dayname=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+        var date=new Date()
+        
+        var hour=date.getHours()
+        
+        var min=date.getMinutes()
+        var sec=date.getSeconds()
+        var day=date.getDay()
+            var one="AM"
+            
+            if(hour>12){
+                    hour=hour-12
+                    one="PM"
+                }
+                if(hour<10){
+                
+                    hour= '0'+hour
+                }
+                                    if(min<10){
+                    
+                                         min= '0'+min
+                            }
+                    time.innerHTML=`<h1>${hour}:${min}:${sec} :${one} ${dayname[day]}</h1> `
+
+            // =====================
+          
+           
+            
+            console.log(hour);
+           
+            
+
+   },1000)
+
+    </script>
+   
+</body>
+</html>
